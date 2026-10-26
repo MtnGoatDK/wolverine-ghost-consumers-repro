@@ -1,0 +1,9 @@
+services:
+  rabbitmq:
+    image: rabbitmq:4.2-management
+    environment:
+      RABBITMQ_DEFAULT_USER: repro
+      RABBITMQ_DEFAULT_PASS: repro
+    ports:
+      - "5680:5672"
+      - "15680:15672"
